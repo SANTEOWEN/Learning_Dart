@@ -10,12 +10,12 @@ void main() {
 
     case 'ABC':
       print(
-          'the destination $destinations is ${weightInKgs * 7} Shipping Cost');
+          'the destination $destinations is \$${weightInKgs * 7} Shipping Cost');
       break;
 
     case 'PQR':
       print(
-          'the destination $destinations is ${weightInKgs * 10} Shipping Cost for');
+          'the destination $destinations is \$${weightInKgs * 10} Shipping Cost');
       break;
 
     default:
