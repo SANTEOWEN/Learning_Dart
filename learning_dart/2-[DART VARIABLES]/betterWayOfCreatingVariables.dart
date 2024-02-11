@@ -28,17 +28,17 @@ void main() {
   //Optional Variables
   // String/int/bool and null
 
-  //if you want to assign null values inside of the variable you need to put question mark after the data type 
+  //if you want to assign null values inside of the variable you need to put question mark after the data type
   //Example
 
   String? someValues = null;
 
   //+ the String variable named "someValues" can now handle null values
-  //+ Always assign data types on creating a new variable everytime you use a null value  
+  //+ Always assign data types on creating a new variable everytime you use a null value
 
   print('${someValues.runtimeType}');
 
-  //remember this --> [String? someValues = null] was redundant so instead we do this 
+  //remember this --> [String? someValues = null] was redundant so instead we do this
 
   String? someValues2;
   print('${someValues2.runtimeType}');
@@ -62,13 +62,12 @@ void main() {
 
 String? moreValue;
 
-void test(){
-
+void test() {
   print(moreValue);
 
   moreValue = null;
 
-  print(moreValue?.length??0);
-  //This returns 0 because we declare the 0 in the end of the two [??] if the variable is null it will output null and if it is not then it will continue to the property
-
+  print(moreValue?.length ?? 0);
+  //.length??0 means if moreValue.length is null then we take 0 as a returning value
+  //  //This returns 0 because we declare the 0 in the end of the two [??] if the variable is null it will output null and if it is not then it will continue to the property
 }
